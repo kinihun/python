@@ -83,6 +83,8 @@ RUN set -ex; \
 		"pip==$PYTHON_PIP_VERSION" \
 	; \
 	pip --version; \
+	pip install boto3; \
+	pip install awscli; \
 	\
 	find /usr/local -depth \
 		\( \
